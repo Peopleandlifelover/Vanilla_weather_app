@@ -35,3 +35,33 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+li {
+  color: #57595f;
+}
+ul.cities {
+  color: #3858a8;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+ul.cities li {
+  color: #3858a8;
+  display: inline;
+  text-align: left;
+  text-decoration: none;
+}
+
+ul.cities li:hover {
+  color: #192c5c;
+  text-decoration: underline;
+}
+
+li#last-update {
+  font-size: 12unpx;
+}
+li#day {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 5px;
+}
