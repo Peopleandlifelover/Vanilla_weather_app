@@ -295,6 +295,19 @@ function convertToCelsius(event) {
 let celsiusLink = document.querySelector("#toCelsius");
 celsiusLink.addEventListener("click", convertToCelsius);
 
+function searchCities(event) {
+  event.preventDefault();
+  let targetCity = event.target.innerHTML;
+  
+  searchCity(targetCity);
+}
+document.querySelector("#prague").addEventListener("click", searchCities);
+document.querySelector("#london").addEventListener("click", searchCities);
+document.querySelector("#paris").addEventListener("click", searchCities);
+document.querySelector("#newyork").addEventListener("click", searchCities);
+document.querySelector("#tokyo").addEventListener("click", searchCities);
 
+
+searchCity("Prague");
 
 
